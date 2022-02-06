@@ -491,7 +491,8 @@ function Kavo.CreateLib(kavName, themeList)
             sectionFrame.Name = "sectionFrame"
             sectionFrame.Parent = page
             sectionFrame.BackgroundColor3 = themeList.Background--36, 37, 43
-            sectionFrame.BorderSizePixel = 0
+            sectionFrame.BorderSizePixel = 2
+            sectionFrame.Transparency = 1
             
             sectionlistoknvm.Name = "sectionlistoknvm"
             sectionlistoknvm.Parent = sectionFrame
