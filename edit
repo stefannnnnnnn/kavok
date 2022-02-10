@@ -78,18 +78,18 @@ local themeStyles = {
         ElementColor = Color3.fromRGB(20, 20, 20)
     },
     GrapeTheme = {
-        SchemeColor = Color3.fromRGB(16, 103, 169),
-        Background = Color3.fromRGB(16, 103, 169),
-        Header = Color3.fromRGB(36, 81, 135),
+        SchemeColor = Color3.fromRGB(166, 71, 214),
+        Background = Color3.fromRGB(64, 50, 71),
+        Header = Color3.fromRGB(36, 28, 41),
         TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(36, 81, 135)
+        ElementColor = Color3.fromRGB(74, 58, 84)
     },
     Ocean = {
-        SchemeColor = Color3.fromRGB(12,58,94),
-        Background = Color3.fromRGB(0,102,204),
-        Header = Color3.fromRGB(0,102,204),
+        SchemeColor = Color3.fromRGB(86, 76, 251),
+        Background = Color3.fromRGB(26, 32, 58),
+        Header = Color3.fromRGB(38, 45, 71),
         TextColor = Color3.fromRGB(200, 200, 200),
-        ElementColor = Color3.fromRGB(5,55,92)
+        ElementColor = Color3.fromRGB(38, 45, 71)
     },
     Midnight = {
         SchemeColor = Color3.fromRGB(26, 189, 158),
@@ -113,11 +113,11 @@ local themeStyles = {
         ElementColor = Color3.fromRGB(24, 24, 24)
     },
     Serpent = {
-        SchemeColor = Color3.fromRGB(35, 35, 35),
-        Background = Color3.fromRGB(255, 255, 255),
-        Header = Color3.fromRGB(35, 35, 35),
+        SchemeColor = Color3.fromRGB(0, 166, 58),
+        Background = Color3.fromRGB(31, 41, 43),
+        Header = Color3.fromRGB(22, 29, 31),
         TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(255, 255, 255)
+        ElementColor = Color3.fromRGB(22, 29, 31)
     }
 }
 local oldTheme = ""
@@ -491,8 +491,7 @@ function Kavo.CreateLib(kavName, themeList)
             sectionFrame.Name = "sectionFrame"
             sectionFrame.Parent = page
             sectionFrame.BackgroundColor3 = themeList.Background--36, 37, 43
-            sectionFrame.BorderSizePixel = 2
-            sectionFrame.Transparency = 1
+            sectionFrame.BorderSizePixel = 0
             
             sectionlistoknvm.Name = "sectionlistoknvm"
             sectionlistoknvm.Parent = sectionFrame
@@ -2611,7 +2610,6 @@ function Kavo.CreateLib(kavName, themeList)
 	            Objects[label] = "TextColor3"
 	            label.TextSize = 14.000
 	            label.TextXAlignment = Enum.TextXAlignment.Left
-	            label.BackgroundTransparency = 1
 	            
 	           	UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = label
